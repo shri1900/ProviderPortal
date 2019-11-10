@@ -2,6 +2,8 @@ using System;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Portal.Api.Models;
+using Portal.API.Common;
+using Portal.API.Models;
 
 namespace Portal.Api.Data
 {
@@ -47,8 +49,16 @@ namespace Portal.Api.Data
 
             user.PasswordSalt = passwordSalt;
             user.PasswordHash = passwordHash;
+            user.RoleId = (int) UserRoleEnum.Admin;
 
             await context.Users.AddAsync(user);
+            
+            UserRole userRole = new UserRole{
+                UserId = user.UserId,
+                RoleId = user.RoleId
+            }; 
+            
+            await context.UserRole.AddAsync(userRole);
             await context.SaveChangesAsync();
 
             return user;
