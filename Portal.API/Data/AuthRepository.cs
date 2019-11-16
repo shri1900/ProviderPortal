@@ -2,7 +2,6 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Portal.API.Models;
 using Portal.API.Common;
-using Portal.API.Models;
 
 namespace Portal.API.Data
 {

@@ -1,6 +1,5 @@
 using Portal.API.Models;
 using Microsoft.EntityFrameworkCore;
-using Portal.API.Models;
 
 namespace Portal.API.Data
 {
