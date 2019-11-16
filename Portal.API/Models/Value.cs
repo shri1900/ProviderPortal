@@ -1,4 +1,4 @@
-namespace Portal.Api.Models
+namespace Portal.API.Models
 {
     public class Value
     {

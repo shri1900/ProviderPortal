@@ -1,11 +1,10 @@
-using System;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Portal.Api.Models;
+using Portal.API.Models;
 using Portal.API.Common;
 using Portal.API.Models;
 
-namespace Portal.Api.Data
+namespace Portal.API.Data
 {
     public class AuthRepository : IAuthRepository
     {

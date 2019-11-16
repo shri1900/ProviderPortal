@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using Portal.Api.Models;
+using Portal.API.Models;
 
-namespace Portal.Api.Data
+namespace Portal.API.Data
 {
     public interface IAuthRepository
     {

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using Portal.Api.Data;
-using Portal.Api.Models;
+using Portal.API.Data;
+using Portal.API.Models;
 using Portal.API.Dtos;
 
 namespace Portal.API.Controllers

@@ -3,7 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Portal.Api.Data;
+using Portal.API.Data;
 
 namespace Portal.API.Migrations
 {
@@ -63,7 +63,7 @@ namespace Portal.API.Migrations
                     b.ToTable("RolePermission");
                 });
 
-            modelBuilder.Entity("Portal.Api.Models.User", b =>
+            modelBuilder.Entity("Portal.API.Models.User", b =>
                 {
                     b.Property<int>("UserId")
                         .ValueGeneratedOnAdd();
@@ -94,7 +94,7 @@ namespace Portal.API.Migrations
                     b.ToTable("UserRole");
                 });
 
-            modelBuilder.Entity("Portal.Api.Models.Value", b =>
+            modelBuilder.Entity("Portal.API.Models.Value", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
@@ -121,7 +121,7 @@ namespace Portal.API.Migrations
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("Portal.Api.Models.User", "User")
+                    b.HasOne("Portal.API.Models.User", "User")
                         .WithMany("UserRoles")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);

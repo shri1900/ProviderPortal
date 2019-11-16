@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using Portal.API.Models;
 
-namespace Portal.Api.Models
+namespace Portal.API.Models
 {
     public class User
     {

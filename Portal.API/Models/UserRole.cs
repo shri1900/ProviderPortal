@@ -1,4 +1,4 @@
-using Portal.Api.Models;
+using Portal.API.Models;
 
 namespace Portal.API.Models
 {
